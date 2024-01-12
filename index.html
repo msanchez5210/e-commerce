@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kiwoko</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" href="img/miniatura_kiwoko.png"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"/>
+</head>
+<body>
+
+<!--Barra navegador-->
+    <nav class="navegador">
+        <div class="arriba">
+            <img src="img/kiwoko_logo.svg" class="logo_kiwoko" alt="logo Kiwoko">
+            <div class="iconos_nav">
+                <button class="boton_usuario">
+                    <img src="img/icon_usuario.svg" class="icono" alt="icono perfil">
+                    <ul class="desplegable_perfil" alt="desplegable">
+                        <li class="apartados_desplegable">Mi área de socio</li>
+                        <li class="apartados_desplegable">Perfil</li>
+                        <li class="apartados_desplegable">Mis favoritos</li>
+                        <li class="apartados_desplegable">Mis pedidos</li>
+                        <li class="apartados_desplegable">Configuración</li>
+                    </ul>
+                </button>
+                <button class="boton_cesta">
+                    <span class="numero_cesta">0</span>
+                    <img src="img/cesta.svg" class="icono" alt="icono cesta">
+                    <section class="overlay area_cesta" alt="cesta">
+                        <div class="arriba_cesta">
+                            <h3 class="encabezado_cesta">Tu cesta de la compra</h3>
+                            <div class="material-symbols-outlined botonCerrarCesta" id="botonCerrarCesta">close</div>
+                        </div>
+                        <ul class="lista_cesta" id="listaCesta">
+                        </ul>
+                        <p id="totalCesta"></p>
+                    </section>
+                </button>                
+            </div> 
+        </div>
+
+        <ul class="abajo">
+            <li class="apartados">Perros</li>
+            <li class="apartados">Gatos</li>
+            <li class="apartados">Roedores</li>
+            <li class="apartados">Pájaros</li>
+            <li class="apartados">Reptiles y Peces</li>
+            <li class="apartados">Accesorios</li>
+            <li class="apartados">Ofertas</li>
+        </ul>
+    </nav>
+
+    <main class="container">
+        <section><img src="img/encabezado.webp" alt="Imagen encabezado" class="foto_encabezado"></section>
+
+<!--Perros-->
+        <section class="seccion">
+            <div class="titulos">
+                <h5 class="titulo_apartado">Top Perros</h5>
+                <p class="ver_todos">Ver todos</p>
+            </div>
+
+            <div class="cajas_agrupadas">
+                <article class="cajas" alt="cajas_articulos" id="producto1"> 
+                    <div class="caja_producto">
+                        <div class="foto_productos">
+                            <img src="img/img1_productos.svg" alt="HILL'S" class="img_producto" >
+                        </div>
+                        <div class="textos_productos">
+                            <div class="textos_descripcion">
+                                <h5 class="nombre_productos">HILL'S</h5>
+                                <p class="descripcion">Hill's Science Plan Perfect Weight Adult Large Pollo</p>
+                            </div>
+                            <p class="precio">20.50€</p>
+                        </div>
+                        <div class="botones_productos">
+                            <button class="boton_detalles">Detalles</button>
+                            <button class="comprar">Comprar</button>
+                        </div>
+                    </div>                
+                </article>
+
+                <article class="cajas" alt="cajas_articulos" id="producto2"> 
+                    <div class="caja_producto">
+                        <div class="foto_productos">
+                            <img src="img/img2_productos.svg" alt="TRUE ORIGINS" class="img_producto">
+                        </div>
+                        <div class="textos_productos">
+                            <div class="textos_descripcion">
+                                <h5 class="nombre_productos">TRUE ORIGINS</h5>
+                                <p class="descripcion">True Origins Pure Salmón</p>
+                            </div>
+                            <p class="precio">20.50€</p>
+                        </div>
+                        <div class="botones_productos">
+                            <button class="boton_detalles">Detalles</button>
+                            <button class="comprar">Comprar</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="cajas" alt="cajas_articulos" id="producto3"> 
+                    <div class="caja_producto">
+                        <div class="foto_productos">
+                            <img src="img/img3_productos.svg" alt="DOGZILLA" class="img_producto">
+                        </div>
+                        <div class="textos_productos">
+                            <div class="textos_descripcion">
+                                <h5 class="nombre_productos">DOGZILLA</h5>
+                                <p class="descripcion">Huesitos de Pollo Snacks</p>
+                            </div>
+                            <p class="precio">3.50€</p>
+                        </div>
+                        <div class="botones_productos">
+                            <button class="boton_detalles">Detalles</button>
+                            <button class="comprar">Comprar</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="cajas" alt="cajas_articulos" id="producto4"> 
+                    <div class="caja_producto">
+                        <div class="foto_productos">
+                            <img src="img/img4_productos.svg" alt="ROYAL CANIN" class="img_producto">
+                        </div>
+                        <div class="textos_productos">
+                            <div class="textos_descripcion">
+                                <h5 class="nombre_productos">ROYAL CANIN</h5>
+                                <p class="descripcion">Royal Canin Mini Adult comida Húmeda</p>
+                            </div>
+                            <p class="precio">6.50€</p>
+                        </div>
+                        <div class="botones_productos">
+                            <button class="boton_detalles">Detalles</button>
+                            <button class="comprar">Comprar</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="cajas" alt="cajas_articulos" id="producto5"> 
+                    <div class="caja_producto">
+                        <div class="foto_productos">
+                            <img src="img/img5_productos.svg" alt="NATURE'S VARIETY" class="img_producto">
+                        </div>
+                        <div class="textos_productos">
+                            <div class="textos_descripcion">
+                                <h5 class="nombre_productos">NATURE'S VARIETY</h5>
+                                <p class="descripcion">Nature's Variety Barritas Pavo Snacks Superfood</p>
+                            </div>
+                            <p class="precio">11.50€</p>
+                        </div>
+                        <div class="botones_productos">
+                            <button class="boton_detalles">Detalles</button>
+                            <button class="comprar">Comprar</button>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+<!--Gatos-->
+        <section class="seccion">
+            <div class="titulos">
+                <h5 class="titulo_apartado">Top Gatos</h5>
+                <p class="ver_todos">Ver todos</p>
+            </div>
+
+            <div class="cajas_agrupadas">
+                <article class="cajas" id="producto6"> 
+                    <div class="caja_producto">
+                        <div class="foto_productos">
+                            <img src="img/img6_productos.svg" alt="TRUE ORIGINS" class="img_producto">
+                        </div>
+                        <div class="textos_productos">
+                            <div class="textos_descripcion">
+                                <h5 class="nombre_productos">TRUE ORIGINS</h5>
+                                <p class="descripcion">True Origins Pure Adult Sterilised Pollo</p>
+                            </div>
+                            <p class="precio">20.50€</p>
+                        </div>
+                        <div class="botones_productos">
+                            <button class="boton_detalles">Detalles</button>
+                            <button class="comprar">Comprar</button>
+                        </div>
+                    </div>                
+                </article>
+
+                <article class="cajas" id="producto7">
+                    <div class="caja_producto">
+                        <div class="foto_productos">
+                            <img src="img/img7_productos.svg" alt="PURINA GOURMET" class="img_producto">
+                        </div>
+                        <div class="textos_productos">
+                            <div class="textos_descripcion">
+                                <h5 class="nombre_productos">PURINA GOURMET</h5>
+                                <p class="descripcion">Gourmet Gold Fondant Sabores Variados - Multipack</p>
+                            </div>
+                            <p class="precio">19,50€</p>
+                        </div>
+                        <div class="botones_productos">
+                            <button class="boton_detalles">Detalles</button>
+                            <button class="comprar">Comprar</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="cajas" id="producto8">
+                    <div class="caja_producto">
+                        <div class="foto_productos">
+                            <img src="img/img8_productos.svg" alt="VITAKRAFT" class="img_producto">
+                        </div>
+                        <div class="textos_productos">
+                            <div class="textos_descripcion">
+                                <h5 class="nombre_productos">VITAKRAFT</h5>
+                                <p class="descripcion">Vitakraft Snack Líquido Ternera</p>
+                            </div>
+                            <p class="precio">4.75€</p>
+                        </div>
+                        <div class="botones_productos">
+                            <button class="boton_detalles">Detalles</button>
+                            <button class="comprar">Comprar</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="cajas" id="producto9">
+                    <div class="caja_producto">
+                        <div class="foto_productos">
+                            <img src="img/img9_productos.svg" alt="PURINA PRO PLAN" class="img_producto">
+                        </div>
+                        <div class="textos_productos">
+                            <div class="textos_descripcion">
+                                <h5 class="nombre_productos">PURINA PRO PLAN</h5>
+                                <p class="descripcion">Purina Pro Plan Veterinary Diets Fortiflora Probiótico</p>
+                            </div>
+                            <p class="precio">13.30€</p>
+                        </div>
+                        <div class="botones_productos">
+                            <button class="boton_detalles">Detalles</button>
+                            <button class="comprar">Comprar</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="cajas" id="producto10">
+                    <div class="caja_producto">
+                        <div class="foto_productos">
+                            <img src="img/img10_productos.svg" alt="NATH" class="img_producto">
+                        </div>
+                        <div class="textos_productos">
+                            <div class="textos_descripcion">
+                                <h5 class="nombre_productos">NATH</h5>
+                                <p class="descripcion">Nath Veterinary Diets Hypoallergenic Adult</p>
+                            </div>
+                            <p class="precio">22.95€</p>
+                        </div>
+                        <div class="botones_productos">
+                            <button class="boton_detalles">Detalles</button>
+                            <button class="comprar">Comprar</button>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+<!--Accesorios-->        
+        <section class="seccion">
+            <div class="titulos">
+                <h5 class="titulo_apartado">Accesorios</h5>
+                <p class="ver_todos">Ver todos</p>
+            </div>
+
+            <div class="cajas_agrupadas">
+                <article class="cajas" id="producto11"> 
+                    <div class="caja_producto">
+                        <div class="foto_productos">
+                            <img src="img/img11_productos.svg" alt="KONG" class="img_producto">
+                        </div>
+                        <div class="textos_productos">
+                            <div class="textos_descripcion">
+                                <h5 class="nombre_productos">KONG</h5>
+                                <p class="descripcion">Kong Classic Portagolosinas Rojo para Perros</p>
+                            </div>
+                            <p class="precio">7.50€</p>
+                        </div>
+                        <div class="botones_productos">
+                            <button class="boton_detalles">Detalles</button>
+                            <button class="comprar">Comprar</button>
+                        </div>
+                    </div>                
+                </article>
+
+                <article class="cajas" id="producto12">
+                    <div class="caja_producto">
+                        <div class="foto_productos">
+                            <img src="img/img12_productos.svg" alt="DOGZZZ" class="img_producto">
+                        </div>
+                        <div class="textos_productos">
+                            <div class="textos_descripcion">
+                                <h5 class="nombre_productos">DOGZZZ</h5>
+                                <p class="descripcion">Dogzz Sheeps Cushion Cama para Perros y Gatos</p>
+                            </div>
+                            <p class="precio">25.00€</p>
+                        </div>
+                        <div class="botones_productos">
+                            <button class="boton_detalles">Detalles</button>
+                            <button class="comprar">Comprar</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="cajas" id="producto13">
+                    <div class="caja_producto">
+                        <div class="foto_productos">
+                            <img src="img/img13_productos.svg" alt="DOGZILLA" class="img_producto">
+                        </div>
+                        <div class="textos_productos">
+                            <div class="textos_descripcion">
+                                <h5 class="nombre_productos">CATSHION</h5>
+                                <p class="descripcion">Catshion Patrol Rascador para Gatos</p>
+                            </div>
+                            <p class="precio">20.50€</p>
+                        </div>
+                        <div class="botones_productos">
+                            <button class="boton_detalles">Detalles</button>
+                            <button class="comprar">Comprar</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="cajas">
+                    <div class="caja_producto" id="producto14">
+                        <div class="foto_productos">
+                            <img src="img/img14_productos.svg" alt="OUTECH" class="img_producto">
+                        </div>
+                        <div class="textos_productos">
+                            <div class="textos_descripcion">
+                                <h5 class="nombre_productos">OUTECH</h5>
+                                <p class="descripcion">Outech Colorblock Pijama para Perros</p>
+                            </div>
+                            <p class="precio">15.75€</p>
+                        </div>
+                        <div class="botones_productos">
+                            <button class="boton_detalles">Detalles</button>
+                            <button class="comprar">Comprar</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="cajas" id="producto15">
+                    <div class="caja_producto">
+                        <div class="foto_productos">
+                            <img src="img/img15_productos.svg" alt="THE CAT BAND" class="img_producto">
+                        </div>
+                        <div class="textos_productos">
+                            <div class="textos_descripcion">
+                                <h5 class="nombre_productos">THE CAT BAND</h5>
+                                <p class="descripcion">The Cat Band Fun Tower Juguete Interactivo</p>
+                            </div>
+                            <p class="precio">18.00€</p>
+                        </div>
+                        <div class="botones_productos">
+                            <button class="boton_detalles">Detalles</button>
+                            <button class="comprar">Comprar</button>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+<!--Nuestras marcas-->
+        <section class="seccion2">
+            <div class="titulos">
+                <h5 class="titulo_apartado">Nuestras marcas</h5>
+                <p class="ver_todos">Ver todos</p>
+            </div>
+            <div class="cajas2">
+                <article class="nuestrasmarcas">
+                    <div class="logos_marcas">
+                        <img src="img/royalcanin.svg" alt="royal canin" class="marcas">
+                        <img src="img/trueorigins.svg" alt="true origins" class="marcas">
+                        <img src="img/advance.svg" alt="advance" class="marcas">
+                        <img src="img/nath.svg" alt="nath" class="marcas">
+                        <img src="img/naturesvariety.svg" alt="natures variety" class="marcas">
+                        <img src="img/purina.svg" alt="purina" class="marcas">
+                    </div>
+                </article>
+            </div>
+        </section>
+
+<!--Ofertas-->
+        <section class="seccion3">
+            <div class="titulos">
+                <h5 class="titulo_apartado">Ofertas</h5>
+                <p class="ver_todos">Ver todos</p>
+            </div>
+            <img id="imagen_galeria" src="img/img1_seccion_galeria.svg" alt="descuentos">
+            <div class="galeria">
+                <button id="boton_izq">
+                    <span class="material-symbols-outlined">arrow_back</span>
+                </button>
+                <section class="circulitos">
+                    <img class="mini active" src="img/img1_seccion_galeria.svg" alt="picture1" data-num = "0" tabindex="0" >
+                    <img class="mini " src="img/img2_seccion_galeria.svg" alt="picture2" data-num = "1" tabindex="0" >
+                    <img class="mini " src="img/img3_seccion_galeria.svg" alt="picture3" data-num = "2" tabindex="0">
+                    <img class="mini " src="img/img4_seccion_galeria.svg" alt="picture4" data-num = "3" tabindex="0">
+                    <img class="mini " src="img/img5_seccion_galeria.svg" alt="picture5" data-num = "4" tabindex="0">                </section>
+                <button id="boton_dcha">
+                    <span class="material-symbols-outlined">arrow_forward</span>
+                </button>
+            </div>
+            
+        </section>
+
+<!--Novedades-->
+        <section class="seccion4">
+            <img src="img/img_seccion_novedades.svg" alt="Novedades" class="imagen_seccion4">
+            <div class="caja_novedades">
+                <div class="textos_subscribirse">
+                    <h5 class="titulo_subscribirse">Recibe nuestras novedades y noticias</h5>
+                    <p class="cuerpo_subscribirse">Lorem ipsum dolor sit amet consectetur. 
+                        Vulputate tortor sem faucibus condimentum urna vitae id. Consectetur 
+                        in erat volutpat lectus hendrerit. Bibendum fringilla nunc facilisis 
+                        proin. Aenean nisl quis vitae arcu nunc in. Blandit quam auctor odio 
+                        vel hendrerit posuere senectus dignissim. Accumsan aliquam sit rutrum 
+                        turpis sollicitudin scelerisque purus odio cursus. Luctus eget blandit 
+                        convallis vel sit. Quis purus quam lectus gravida tortor vitae bibendum 
+                        neque. Dolor libero proin condimentum bibendum integer. At enim parturient 
+                        nulla habitasse. Sed vitae tellus amet quis interdum dui leo pretium lorem. 
+                        Sed neque egestas urna viverra scelerisque pulvinar id.</p>
+                </div>
+
+                <div class="formulario_email">
+                    <form class="formulario">
+                        <input class="email" type="text" placeholder="Escribe tu email" name="email">
+                    </form>
+                    <button class="boton_enviar">Enviar</button>
+                </div>
+            </div>
+
+        </section>
+
+<!--Ventana modal detalles-->
+        <article id="modal" class="ventana_modal">
+            <div class="modal_contenido">
+                <span class="cancel material-symbols-outlined" id="cerrarDetalleModalBtn">cancel</span>
+                <h1 class="titulo_detalles">Detalles del producto</h1>
+                <div class="detalles_container">
+                    <div class="detalles_foto">
+                        <img id="product-image" src="" alt="Producto">
+                    </div>
+                    <div class="detalles_textos">
+                        <div class="detalles_info">
+                            <p class="titulo_producto"></p>
+                            <p class="detalles_descripcion"></p>
+                            <p class="precio_producto">
+                                <!-- Precio del producto -->
+                            </p>
+                        </div>
+                        <button class="addcesta" >Añadir a la cesta</button>
+                    </div>
+                </div>
+            </div>
+        </article>
+  
+    </main>
+
+    <footer class="footer"></footer>
+    <script src="app/main.js"></script>
+</body>
+</html>

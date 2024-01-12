@@ -1,0 +1,258 @@
+.foto_encabezado
+    width: 100%
+
+
+.seccion
+    display: flex
+    flex-direction: column
+    padding: 20px 50px 20px 50px
+    margin-bottom: 20px
+
+    .titulos
+        display: flex
+        flex-direction: row
+        justify-content: space-between
+        align-items: center
+        padding-bottom: 20px
+
+        .titulo_apartado
+            font-size: 15px
+            font-weight: 600
+        
+        .ver_todos
+            color: #E22020
+            font-size: 14px
+            font-weight: 700    
+
+    
+.cajas_agrupadas
+        display: flex
+        flex-direction: row
+        justify-content: space-between
+        align-items: center
+
+        .cajas
+            background-color: #E6E6E6
+            width: 250px     
+            height: 260px
+            .caja_producto
+                flex-direction: column
+                align-items: center
+                .foto_productos
+                    width: 250px
+                    height: 107px
+                    overflow: hidden
+                    position: relative
+                    display: flex
+                    justify-content: center
+                    align-items: center
+                    .foto_productos img
+                        width: 100%
+                        height: auto
+                        display: block
+
+            &:hover
+                box-shadow: 0 5px 5px grey
+                transform: scale(1.03)
+
+    
+.textos_productos
+    display: flex
+    flex-direction: row
+    align-items: center
+    justify-content: center
+    padding: 0 10px 0 10px
+
+    .textos_descripcion
+        padding: 0 10px 0 10px
+        .nombre_productos
+            margin-block-end: 8px
+            margin-block-start: 8px
+            font-weight: 800
+            color: #292929
+        .descripcion
+            color: #515151
+            font-size: 12px
+            margin-block-end: 0
+            margin-block-start: 0
+    .precio
+            font-size: 17px
+            font-weight: 800
+
+
+.botones_productos
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    padding: 10px 20px 10px 20px
+    .boton_detalles
+        background-color: white
+        border-radius: 8px
+        font-size: 12pt
+        padding: 10px
+        border: 2px solid #484848
+        font-weight: 600
+        cursor: pointer
+
+    .comprar
+        background-color: #E22020
+        color: white
+        border: none
+        border-radius: 8px
+        font-size: 12pt
+        padding: 10px
+        font-weight: 600
+        cursor: pointer
+
+
+
+
+.seccion2
+    display: flex
+    flex-direction: column
+    padding: 20px 50px 20px 50px
+    margin-bottom: 20px
+
+    .titulos
+        display: flex
+        flex-direction: row
+        justify-content: space-between
+        align-items: center
+        padding-bottom: 20px
+
+        .titulo_apartado
+            font-size: 15px
+            font-weight: 600
+        
+        .ver_todos
+            color: #E22020
+            font-size: 14px
+            font-weight: 700 
+    
+
+.logos_marcas
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    align-items: center
+
+
+.seccion3
+    display: flex
+    flex-direction: column
+    padding: 20px 50px 20px 50px
+    margin-bottom: 20px
+
+    .titulos
+        display: flex
+        flex-direction: row
+        justify-content: space-between
+        align-items: center
+        padding-bottom: 20px
+
+        .titulo_apartado
+            font-size: 15px
+            font-weight: 600
+        
+        .ver_todos
+            color: #E22020
+            font-size: 14px
+            font-weight: 700 
+       
+
+.seccion4
+    display: flex
+    flex-direction: column
+    align-items: center
+    padding: 20px 50px 20px 50px
+    margin-bottom: 20px
+
+    .imagen_seccion4
+        width: 100%
+    
+    .caja_novedades
+        display: flex
+        flex-direction: row
+        justify-content: space-between
+        
+.titulo_subscribirse
+    font-size: 15px
+    font-weight: 600
+
+.textos_subscribirse
+    display: flex
+    flex-direction: column
+    padding-right: 60px
+
+
+.formulario_email
+    display: flex
+    flex-direction: row
+    align-items: center 
+    color: black
+
+    .email
+        background-color: #e7e7e7
+        padding: 14px 5px 14px 5px
+        border: 1px solid black
+        border-radius: 5px
+        width: 350px
+        border-radius: 7px 0 0 7px
+
+    .boton_enviar
+        border: none
+        padding: 15px 25px 15px 25px
+        background-color: #353535
+        color: white
+        border-radius: 0 7px 7px 0
+
+
+
+@media only screen and (max-width: 1385px) 
+    .cajas_agrupadas 
+        display: flex
+        flex-direction: column
+        align-items: center
+
+    .cajas_agrupadas .cajas 
+        margin-bottom: 20px
+        width: 100%
+        .caja_producto
+            display: flex
+            flex-direction: row
+            justify-content: space-between
+            .foto_productos
+                width: 250px
+                height: 260px
+                overflow: hidden
+                position: relative
+                display: flex
+                justify-content: center
+                align-items: center
+                .foto_productos img
+                    width: 100%
+                    height: auto
+                    display: block
+            .textos_productos
+                display: flex
+                flex-direction: column
+                align-items: flex-start
+                width: 250px
+                .textos_descripcion
+                    padding: 0
+                    .nombre_productos
+                        font-size: 15px
+                    .descripcion
+                        font-size: 14px
+            .botones_productos
+                display: flex
+                flex-direction: column
+                button
+                    width: 150px
+                    margin: 5px 0 5px 0 
+    .logos_marcas
+        display: flex
+        flex-direction: column
+  
+  
+  
